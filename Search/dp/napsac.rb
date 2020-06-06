@@ -1,3 +1,4 @@
+# 動的計画法
 N, W = gets.split(" ").map(&:to_i)
 
 LS = []
