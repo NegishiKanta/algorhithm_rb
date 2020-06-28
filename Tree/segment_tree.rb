@@ -1,6 +1,9 @@
 N = 5
 A = [1, 4, 3, 2, 4]
 
+# 初期化メソッド
+# 引数: 数列を含む配列
+# seggment treeを作る
 def init_min(init_min_val)
   for i in 0..N-1
     SEG[i+NUM-1] = init_min_val[i]
@@ -82,5 +85,5 @@ init_min(A)
 p SEG
 
 
-#A[1]~A[3]の最小値
-print(query_min(0,4)) #2
+#A[1]~A[3]の最小値 - 半開区間
+print(query_min(0,4))
